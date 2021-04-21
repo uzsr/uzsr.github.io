@@ -10,7 +10,7 @@
         location.reload();
     }
 
-    if ('serviceWorker' in navigator) {
+    if ('serviceWorker' in navigator && localStorage["flag"]==='uzsr') {
         let sw = '/secret/sw.js';
         let scope = '/secret/';
         if (location.href.indexOf('/secret/') === -1) {
